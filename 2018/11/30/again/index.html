@@ -5,14 +5,17 @@
   
   <title>again | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="###如何在另一台电脑使用原来的hexo为了推广博客我之前都在简书上写，发现根本没人看，so，我还是继续维护一下我的git博客吧，毕竟我喜欢这种简约的感觉。但是最大的问题是如何在新电脑上重新连接原来的hexo，并进行开发。其实网上有很多的教程，但是好庞杂了，有一个瞎写让我一直弄错了，还是记一下自己的。 ####1.安装hexo先安装hexo，然后找一个文件初始化hexo12npm install">
+<meta property="og:type" content="article">
 <meta property="og:title" content="again">
 <meta property="og:url" content="http://yoursite.com/2018/11/30/again/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="###如何在另一台电脑使用原来的hexo为了推广博客我之前都在简书上写，发现根本没人看，so，我还是继续维护一下我的git博客吧，毕竟我喜欢这种简约的感觉。但是最大的问题是如何在新电脑上重新连接原来的hexo，并进行开发。其实网上有很多的教程，但是好庞杂了，有一个瞎写让我一直弄错了，还是记一下自己的。 ####1.安装hexo先安装hexo，然后找一个文件初始化hexo12npm install">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-30T07:31:20.327Z">
+<meta property="og:updated_time" content="2018-11-30T07:46:43.508Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="again">
+<meta name="twitter:description" content="###如何在另一台电脑使用原来的hexo为了推广博客我之前都在简书上写，发现根本没人看，so，我还是继续维护一下我的git博客吧，毕竟我喜欢这种简约的感觉。但是最大的问题是如何在新电脑上重新连接原来的hexo，并进行开发。其实网上有很多的教程，但是好庞杂了，有一个瞎写让我一直弄错了，还是记一下自己的。 ####1.安装hexo先安装hexo，然后找一个文件初始化hexo12npm install">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -83,11 +86,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>###如何在另一台电脑使用原来的hexo<br>为了推广博客我之前都在简书上写，发现根本没人看，so，我还是继续维护一下我的git博客吧，毕竟我喜欢这种简约的感觉。<br>但是最大的问题是如何在新电脑上重新连接原来的hexo，并进行开发。其实网上有很多的教程，但是好庞杂了，有一个瞎写让我一直弄错了，还是记一下自己的。</p>
+<p>####1.安装hexo<br>先安装hexo，然后找一个文件初始化hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure></p>
+<p>此时本地就可以搭建博客了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generator</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
+<p>到浏览器输入localhost:4000,就可以看到自带的hello world了。<br>接下来的问题就是如何联系上之前的博客</p>
+<p>####部署hexo到github.io上<br>在你当前的hexo文件下，配置_config.yml文件(有个人写的是在根目录文件，我弄了半天不行，都绝望了)。<br>然后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim _config.yml</span><br></pre></td></tr></table></figure></p>
+<p>下拉到最后一行 deploy:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repository: 博客在github上的地址</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
+<p>如果不行就安装hexo对于git的部署工具。<br><code>npm install hexo-deployer-git --save</code> </p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/30/again/" data-id="cjp3pr1r70000sv5ts81wq6o9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/30/again/" data-id="cjp3q5ymm0001905t2hr2pp4f" class="article-share-link">Share</a>
       
       
     </footer>
